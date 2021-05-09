@@ -108,10 +108,7 @@ class Graph(object):
         return float('infinity')
 
 if __name__ == "__main__":
-    world = Graph.load()
-    S = input("enter airport code for Source : ")
-    D = input(" enter airport code for destination : ")
-
+     world = Graph.load()
     valencia = AIRPORTS['VLC']
     portland = AIRPORTS['PDX']
     distance, path = world.dijkstra(valencia, portland)
